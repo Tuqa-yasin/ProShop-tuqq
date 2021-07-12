@@ -26,9 +26,9 @@ const HomeScreen = () => {
     <SpinnerContainer />
   ) : (
     <FlexColumn>
-      <HeroSection sliderProducts= {guest.sliderImages} />
-      <FeaturedProductsSection products={guest.products} />
-      <TopRatedSection topRatedProducts= {guest.sliderImages} />
+      <HeroSection sliderProducts= {state.guestState.sliderImages} />
+      <FeaturedProductsSection products={state.guestState.products} />
+      <TopRatedSection topRatedProducts= {state.guestState.sliderImages} />
     </FlexColumn>
   );
 };
